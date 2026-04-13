@@ -73,3 +73,11 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.ptw1255.BabyLockTests
+schemes:
+  BabyLockTests:
+    build:
+      targets:
+        BabyLockTests: test
+    test:
+      targets:
+        - BabyLockTests
