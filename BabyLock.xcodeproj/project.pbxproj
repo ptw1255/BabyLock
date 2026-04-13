@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		12A54ACF826A4B4361515541 /* PasscodeSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC64AA226B92AFBC1D75A16 /* PasscodeSetupView.swift */; };
 		1AF5435E247F482F7F2A1AFC /* BabyLockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F5EE9081589DDFB5DEC5FE /* BabyLockApp.swift */; };
+		2B7BD04B63694BD0D6EC753C /* BrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BAA84E40DCBEBD32EC1AAA /* BrowserView.swift */; };
 		3D60019FF84C979FB60BBBAA /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3931740E5F443C8A2C156A4 /* ContentManager.swift */; };
 		41654B7BADF38F8D4496A516 /* PasscodeStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FB919FCAB4BA26C1F704A /* PasscodeStoreTests.swift */; };
 		510AEAFA28C801D20EC5D817 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18D15E78625B0089F05154C /* ShareViewController.swift */; };
@@ -16,10 +17,12 @@
 		864B38A1B7C1D4C4C08075D6 /* PasscodeEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E3A413F3102C314D0CE3B9 /* PasscodeEntryView.swift */; };
 		9301B67EE06CD7010B2EC342 /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D3F70577DA2D13FB6C3697 /* ParentView.swift */; };
 		99643F61F1D7ED2F61B1ABD4 /* URLSchemeHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858A026C65E7AE0D8AA754E /* URLSchemeHandlerTests.swift */; };
+		ACF73BA1C274193D3F5A0168 /* UnlockGestureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186370686747829E88DC773F /* UnlockGestureTests.swift */; };
 		C3D1DA9A0BE5F638E92D21DD /* PasscodeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167C0C6E0ADFEBB031044CCE /* PasscodeStore.swift */; };
 		D8FDCE8649C83200DA9B7D06 /* URLSchemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6221F6F449156815792B8574 /* URLSchemeHandler.swift */; };
 		E5C62DD23F3FC614206CC6B9 /* TouchBlockingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FCB5B3F8BE49C9D3BDE59B /* TouchBlockingOverlay.swift */; };
 		E67618CC5F6D8E1ADE3E443B /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4712A4A54BC694101DF6A36D /* AppState.swift */; };
+		FC9DDD4EC85DDC3E7FF2C982 /* UnlockGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD3673DDED6B14907765E3C /* UnlockGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +57,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		08BAA84E40DCBEBD32EC1AAA /* BrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserView.swift; sourceTree = "<group>"; };
 		0A3FB5EC318AF79FC44536F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		13CF07FB8F431701209D8652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		167C0C6E0ADFEBB031044CCE /* PasscodeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeStore.swift; sourceTree = "<group>"; };
+		186370686747829E88DC773F /* UnlockGestureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockGestureTests.swift; sourceTree = "<group>"; };
 		2A7B52CE3E64B99B2F1623FE /* BabyLockShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BabyLockShareExtension.entitlements; sourceTree = "<group>"; };
 		2D104C3A126ECF718E96BA9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		31F5EE9081589DDFB5DEC5FE /* BabyLockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyLockApp.swift; sourceTree = "<group>"; };
@@ -74,12 +79,14 @@
 		E4ED561280DE4935D3E69A75 /* BabyLockShareExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = BabyLockShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E3A413F3102C314D0CE3B9 /* PasscodeEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeEntryView.swift; sourceTree = "<group>"; };
 		FA7FB919FCAB4BA26C1F704A /* PasscodeStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeStoreTests.swift; sourceTree = "<group>"; };
+		FFD3673DDED6B14907765E3C /* UnlockGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockGestureRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		06111F5CDF8803EBE7740AD9 /* Parent */ = {
 			isa = PBXGroup;
 			children = (
+				08BAA84E40DCBEBD32EC1AAA /* BrowserView.swift */,
 				66D3F70577DA2D13FB6C3697 /* ParentView.swift */,
 				9AC64AA226B92AFBC1D75A16 /* PasscodeSetupView.swift */,
 			);
@@ -108,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				52FCB5B3F8BE49C9D3BDE59B /* TouchBlockingOverlay.swift */,
+				FFD3673DDED6B14907765E3C /* UnlockGestureRecognizer.swift */,
 			);
 			path = ChildMode;
 			sourceTree = "<group>";
@@ -117,6 +125,7 @@
 			children = (
 				13CF07FB8F431701209D8652 /* Info.plist */,
 				FA7FB919FCAB4BA26C1F704A /* PasscodeStoreTests.swift */,
+				186370686747829E88DC773F /* UnlockGestureTests.swift */,
 				B858A026C65E7AE0D8AA754E /* URLSchemeHandlerTests.swift */,
 			);
 			path = BabyLockTests;
@@ -279,6 +288,7 @@
 			files = (
 				41654B7BADF38F8D4496A516 /* PasscodeStoreTests.swift in Sources */,
 				99643F61F1D7ED2F61B1ABD4 /* URLSchemeHandlerTests.swift in Sources */,
+				ACF73BA1C274193D3F5A0168 /* UnlockGestureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +298,7 @@
 			files = (
 				E67618CC5F6D8E1ADE3E443B /* AppState.swift in Sources */,
 				1AF5435E247F482F7F2A1AFC /* BabyLockApp.swift in Sources */,
+				2B7BD04B63694BD0D6EC753C /* BrowserView.swift in Sources */,
 				3D60019FF84C979FB60BBBAA /* ContentManager.swift in Sources */,
 				9301B67EE06CD7010B2EC342 /* ParentView.swift in Sources */,
 				864B38A1B7C1D4C4C08075D6 /* PasscodeEntryView.swift in Sources */,
@@ -295,6 +306,7 @@
 				C3D1DA9A0BE5F638E92D21DD /* PasscodeStore.swift in Sources */,
 				E5C62DD23F3FC614206CC6B9 /* TouchBlockingOverlay.swift in Sources */,
 				D8FDCE8649C83200DA9B7D06 /* URLSchemeHandler.swift in Sources */,
+				FC9DDD4EC85DDC3E7FF2C982 /* UnlockGestureRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
