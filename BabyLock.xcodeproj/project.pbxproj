@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1AF5435E247F482F7F2A1AFC /* BabyLockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F5EE9081589DDFB5DEC5FE /* BabyLockApp.swift */; };
+		41654B7BADF38F8D4496A516 /* PasscodeStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FB919FCAB4BA26C1F704A /* PasscodeStoreTests.swift */; };
 		510AEAFA28C801D20EC5D817 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18D15E78625B0089F05154C /* ShareViewController.swift */; };
 		5D8BDFF7EE32CF6B2E2F0FCE /* BabyLockShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E4ED561280DE4935D3E69A75 /* BabyLockShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A51500E4A650928F3F9046B3 /* PlaceholderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA65166D712FCD07DF298F45 /* PlaceholderTest.swift */; };
+		C3D1DA9A0BE5F638E92D21DD /* PasscodeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167C0C6E0ADFEBB031044CCE /* PasscodeStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		0A3FB5EC318AF79FC44536F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		13CF07FB8F431701209D8652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		167C0C6E0ADFEBB031044CCE /* PasscodeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeStore.swift; sourceTree = "<group>"; };
 		2A7B52CE3E64B99B2F1623FE /* BabyLockShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BabyLockShareExtension.entitlements; sourceTree = "<group>"; };
 		2D104C3A126ECF718E96BA9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		31F5EE9081589DDFB5DEC5FE /* BabyLockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyLockApp.swift; sourceTree = "<group>"; };
@@ -55,7 +57,7 @@
 		B618AFD35870E87F5F21D859 /* BabyLockTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BabyLockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18D15E78625B0089F05154C /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		E4ED561280DE4935D3E69A75 /* BabyLockShareExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = BabyLockShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA65166D712FCD07DF298F45 /* PlaceholderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTest.swift; sourceTree = "<group>"; };
+		FA7FB919FCAB4BA26C1F704A /* PasscodeStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeStoreTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -94,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				13CF07FB8F431701209D8652 /* Info.plist */,
-				EA65166D712FCD07DF298F45 /* PlaceholderTest.swift */,
+				FA7FB919FCAB4BA26C1F704A /* PasscodeStoreTests.swift */,
 			);
 			path = BabyLockTests;
 			sourceTree = "<group>";
@@ -122,6 +124,7 @@
 		B5851CF84764AC28B633788A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				167C0C6E0ADFEBB031044CCE /* PasscodeStore.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -250,7 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A51500E4A650928F3F9046B3 /* PlaceholderTest.swift in Sources */,
+				41654B7BADF38F8D4496A516 /* PasscodeStoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AF5435E247F482F7F2A1AFC /* BabyLockApp.swift in Sources */,
+				C3D1DA9A0BE5F638E92D21DD /* PasscodeStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
