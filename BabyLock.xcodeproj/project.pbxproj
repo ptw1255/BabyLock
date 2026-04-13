@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B28D3386552E8EFC5BC715E /* MediaPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7865494F8CE4D94CCE5D44 /* MediaPlayerView.swift */; };
+		12A54ACF826A4B4361515541 /* PasscodeSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC64AA226B92AFBC1D75A16 /* PasscodeSetupView.swift */; };
+		1AF5435E247F482F7F2A1AFC /* BabyLockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F5EE9081589DDFB5DEC5FE /* BabyLockApp.swift */; };
+		2B7BD04B63694BD0D6EC753C /* BrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BAA84E40DCBEBD32EC1AAA /* BrowserView.swift */; };
+		3D60019FF84C979FB60BBBAA /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3931740E5F443C8A2C156A4 /* ContentManager.swift */; };
+		41654B7BADF38F8D4496A516 /* PasscodeStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FB919FCAB4BA26C1F704A /* PasscodeStoreTests.swift */; };
+		510AEAFA28C801D20EC5D817 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18D15E78625B0089F05154C /* ShareViewController.swift */; };
+		5D8BDFF7EE32CF6B2E2F0FCE /* BabyLockShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E4ED561280DE4935D3E69A75 /* BabyLockShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6007FDACCDAC32C239A9C9C6 /* ChildModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D88AE5EB4F523DDCF49EFF /* ChildModeController.swift */; };
+		864B38A1B7C1D4C4C08075D6 /* PasscodeEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E3A413F3102C314D0CE3B9 /* PasscodeEntryView.swift */; };
+		9301B67EE06CD7010B2EC342 /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D3F70577DA2D13FB6C3697 /* ParentView.swift */; };
+		99643F61F1D7ED2F61B1ABD4 /* URLSchemeHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858A026C65E7AE0D8AA754E /* URLSchemeHandlerTests.swift */; };
+		9B7970A0B498C61E3A66B364 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C545827039AC9CC66193B5 /* SettingsView.swift */; };
+		ACF73BA1C274193D3F5A0168 /* UnlockGestureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186370686747829E88DC773F /* UnlockGestureTests.swift */; };
+		C3D1DA9A0BE5F638E92D21DD /* PasscodeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167C0C6E0ADFEBB031044CCE /* PasscodeStore.swift */; };
+		D8FDCE8649C83200DA9B7D06 /* URLSchemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6221F6F449156815792B8574 /* URLSchemeHandler.swift */; };
+		E296E84E5927FF48376817ED /* BrowserToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF21E35BA28F45EBD275A4 /* BrowserToolbar.swift */; };
+		E5C62DD23F3FC614206CC6B9 /* TouchBlockingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FCB5B3F8BE49C9D3BDE59B /* TouchBlockingOverlay.swift */; };
+		E67618CC5F6D8E1ADE3E443B /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4712A4A54BC694101DF6A36D /* AppState.swift */; };
+		FC9DDD4EC85DDC3E7FF2C982 /* UnlockGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD3673DDED6B14907765E3C /* UnlockGestureRecognizer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		421A302473A1BC4795F1AD71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F9613383C18363FA3C93BFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D5F636A97AD5F6546FA222D;
+			remoteInfo = BabyLockShareExtension;
+		};
+		5CF1B48031C2AF6222A9CFCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F9613383C18363FA3C93BFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76400EE5D8B45624928E8273;
+			remoteInfo = BabyLock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		98689C06AA2A2537ABA8ECE6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5D8BDFF7EE32CF6B2E2F0FCE /* BabyLockShareExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08BAA84E40DCBEBD32EC1AAA /* BrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserView.swift; sourceTree = "<group>"; };
+		0A3FB5EC318AF79FC44536F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0C7865494F8CE4D94CCE5D44 /* MediaPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPlayerView.swift; sourceTree = "<group>"; };
+		13CF07FB8F431701209D8652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		167C0C6E0ADFEBB031044CCE /* PasscodeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeStore.swift; sourceTree = "<group>"; };
+		186370686747829E88DC773F /* UnlockGestureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockGestureTests.swift; sourceTree = "<group>"; };
+		2A7B52CE3E64B99B2F1623FE /* BabyLockShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BabyLockShareExtension.entitlements; sourceTree = "<group>"; };
+		2D104C3A126ECF718E96BA9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		31F5EE9081589DDFB5DEC5FE /* BabyLockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyLockApp.swift; sourceTree = "<group>"; };
+		4712A4A54BC694101DF6A36D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		52FCB5B3F8BE49C9D3BDE59B /* TouchBlockingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBlockingOverlay.swift; sourceTree = "<group>"; };
+		539659A7350630DAE6DE26D8 /* BabyLock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BabyLock.entitlements; sourceTree = "<group>"; };
+		6221F6F449156815792B8574 /* URLSchemeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSchemeHandler.swift; sourceTree = "<group>"; };
+		66D3F70577DA2D13FB6C3697 /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
+		79F401A425C60889E45DF712 /* BabyLock.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = BabyLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AC64AA226B92AFBC1D75A16 /* PasscodeSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeSetupView.swift; sourceTree = "<group>"; };
+		A7D88AE5EB4F523DDCF49EFF /* ChildModeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildModeController.swift; sourceTree = "<group>"; };
+		B618AFD35870E87F5F21D859 /* BabyLockTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BabyLockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B858A026C65E7AE0D8AA754E /* URLSchemeHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSchemeHandlerTests.swift; sourceTree = "<group>"; };
+		C18D15E78625B0089F05154C /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		C3931740E5F443C8A2C156A4 /* ContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentManager.swift; sourceTree = "<group>"; };
+		E4ED561280DE4935D3E69A75 /* BabyLockShareExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = BabyLockShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2E3A413F3102C314D0CE3B9 /* PasscodeEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeEntryView.swift; sourceTree = "<group>"; };
+		F5FF21E35BA28F45EBD275A4 /* BrowserToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserToolbar.swift; sourceTree = "<group>"; };
+		F7C545827039AC9CC66193B5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FA7FB919FCAB4BA26C1F704A /* PasscodeStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeStoreTests.swift; sourceTree = "<group>"; };
+		FFD3673DDED6B14907765E3C /* UnlockGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockGestureRecognizer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		06111F5CDF8803EBE7740AD9 /* Parent */ = {
+			isa = PBXGroup;
+			children = (
+				F5FF21E35BA28F45EBD275A4 /* BrowserToolbar.swift */,
+				08BAA84E40DCBEBD32EC1AAA /* BrowserView.swift */,
+				0C7865494F8CE4D94CCE5D44 /* MediaPlayerView.swift */,
+				66D3F70577DA2D13FB6C3697 /* ParentView.swift */,
+				9AC64AA226B92AFBC1D75A16 /* PasscodeSetupView.swift */,
+				F7C545827039AC9CC66193B5 /* SettingsView.swift */,
+			);
+			path = Parent;
+			sourceTree = "<group>";
+		};
+		2B415DFD94D6EA97B1A6C9DE /* ContentManager */ = {
+			isa = PBXGroup;
+			children = (
+				C3931740E5F443C8A2C156A4 /* ContentManager.swift */,
+			);
+			path = ContentManager;
+			sourceTree = "<group>";
+		};
+		39941A0B8393628D34AE0E1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79F401A425C60889E45DF712 /* BabyLock.app */,
+				E4ED561280DE4935D3E69A75 /* BabyLockShareExtension.appex */,
+				B618AFD35870E87F5F21D859 /* BabyLockTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48B4A886230A106A247FF9B0 /* ChildMode */ = {
+			isa = PBXGroup;
+			children = (
+				A7D88AE5EB4F523DDCF49EFF /* ChildModeController.swift */,
+				52FCB5B3F8BE49C9D3BDE59B /* TouchBlockingOverlay.swift */,
+				FFD3673DDED6B14907765E3C /* UnlockGestureRecognizer.swift */,
+			);
+			path = ChildMode;
+			sourceTree = "<group>";
+		};
+		6F89ED7A2DFB388F33536461 /* BabyLockTests */ = {
+			isa = PBXGroup;
+			children = (
+				13CF07FB8F431701209D8652 /* Info.plist */,
+				FA7FB919FCAB4BA26C1F704A /* PasscodeStoreTests.swift */,
+				186370686747829E88DC773F /* UnlockGestureTests.swift */,
+				B858A026C65E7AE0D8AA754E /* URLSchemeHandlerTests.swift */,
+			);
+			path = BabyLockTests;
+			sourceTree = "<group>";
+		};
+		733E7154E5B26B402DED2D27 = {
+			isa = PBXGroup;
+			children = (
+				EB3CAD121EC82D6AC2B218BF /* BabyLock */,
+				E0A2B3E7BE0D3E4D384A2764 /* BabyLockShareExtension */,
+				6F89ED7A2DFB388F33536461 /* BabyLockTests */,
+				39941A0B8393628D34AE0E1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A576D7A6A904C39455C9A1CD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4712A4A54BC694101DF6A36D /* AppState.swift */,
+				539659A7350630DAE6DE26D8 /* BabyLock.entitlements */,
+				31F5EE9081589DDFB5DEC5FE /* BabyLockApp.swift */,
+				2D104C3A126ECF718E96BA9C /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B5851CF84764AC28B633788A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F2E3A413F3102C314D0CE3B9 /* PasscodeEntryView.swift */,
+				167C0C6E0ADFEBB031044CCE /* PasscodeStore.swift */,
+				6221F6F449156815792B8574 /* URLSchemeHandler.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E0A2B3E7BE0D3E4D384A2764 /* BabyLockShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				2A7B52CE3E64B99B2F1623FE /* BabyLockShareExtension.entitlements */,
+				0A3FB5EC318AF79FC44536F2 /* Info.plist */,
+				C18D15E78625B0089F05154C /* ShareViewController.swift */,
+			);
+			path = BabyLockShareExtension;
+			sourceTree = "<group>";
+		};
+		EB3CAD121EC82D6AC2B218BF /* BabyLock */ = {
+			isa = PBXGroup;
+			children = (
+				A576D7A6A904C39455C9A1CD /* App */,
+				48B4A886230A106A247FF9B0 /* ChildMode */,
+				2B415DFD94D6EA97B1A6C9DE /* ContentManager */,
+				06111F5CDF8803EBE7740AD9 /* Parent */,
+				B5851CF84764AC28B633788A /* Shared */,
+			);
+			path = BabyLock;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D5F636A97AD5F6546FA222D /* BabyLockShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60A3DEE62472B2B355842901 /* Build configuration list for PBXNativeTarget "BabyLockShareExtension" */;
+			buildPhases = (
+				18C7A471413C7BB6D89900F8 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BabyLockShareExtension;
+			packageProductDependencies = (
+			);
+			productName = BabyLockShareExtension;
+			productReference = E4ED561280DE4935D3E69A75 /* BabyLockShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		76400EE5D8B45624928E8273 /* BabyLock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28E5EA2371F53B5A2705405A /* Build configuration list for PBXNativeTarget "BabyLock" */;
+			buildPhases = (
+				C5551AAC79449F4BD565F3C1 /* Sources */,
+				98689C06AA2A2537ABA8ECE6 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A8DE9C3F89BA2ECF7FF64A3 /* PBXTargetDependency */,
+			);
+			name = BabyLock;
+			packageProductDependencies = (
+			);
+			productName = BabyLock;
+			productReference = 79F401A425C60889E45DF712 /* BabyLock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		82160159FD250EE2A81E49AE /* BabyLockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD1F057A7CCE6CDF0DD73D5E /* Build configuration list for PBXNativeTarget "BabyLockTests" */;
+			buildPhases = (
+				A204E6AAACA78C307A82D10C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92CD5E123629B30547076B2F /* PBXTargetDependency */,
+			);
+			name = BabyLockTests;
+			packageProductDependencies = (
+			);
+			productName = BabyLockTests;
+			productReference = B618AFD35870E87F5F21D859 /* BabyLockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F9613383C18363FA3C93BFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = A12F5C7D39742F7F2B48963C /* Build configuration list for PBXProject "BabyLock" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 733E7154E5B26B402DED2D27;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 39941A0B8393628D34AE0E1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76400EE5D8B45624928E8273 /* BabyLock */,
+				5D5F636A97AD5F6546FA222D /* BabyLockShareExtension */,
+				82160159FD250EE2A81E49AE /* BabyLockTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18C7A471413C7BB6D89900F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				510AEAFA28C801D20EC5D817 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A204E6AAACA78C307A82D10C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41654B7BADF38F8D4496A516 /* PasscodeStoreTests.swift in Sources */,
+				99643F61F1D7ED2F61B1ABD4 /* URLSchemeHandlerTests.swift in Sources */,
+				ACF73BA1C274193D3F5A0168 /* UnlockGestureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5551AAC79449F4BD565F3C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E67618CC5F6D8E1ADE3E443B /* AppState.swift in Sources */,
+				1AF5435E247F482F7F2A1AFC /* BabyLockApp.swift in Sources */,
+				E296E84E5927FF48376817ED /* BrowserToolbar.swift in Sources */,
+				2B7BD04B63694BD0D6EC753C /* BrowserView.swift in Sources */,
+				6007FDACCDAC32C239A9C9C6 /* ChildModeController.swift in Sources */,
+				3D60019FF84C979FB60BBBAA /* ContentManager.swift in Sources */,
+				0B28D3386552E8EFC5BC715E /* MediaPlayerView.swift in Sources */,
+				9301B67EE06CD7010B2EC342 /* ParentView.swift in Sources */,
+				864B38A1B7C1D4C4C08075D6 /* PasscodeEntryView.swift in Sources */,
+				12A54ACF826A4B4361515541 /* PasscodeSetupView.swift in Sources */,
+				C3D1DA9A0BE5F638E92D21DD /* PasscodeStore.swift in Sources */,
+				9B7970A0B498C61E3A66B364 /* SettingsView.swift in Sources */,
+				E5C62DD23F3FC614206CC6B9 /* TouchBlockingOverlay.swift in Sources */,
+				D8FDCE8649C83200DA9B7D06 /* URLSchemeHandler.swift in Sources */,
+				FC9DDD4EC85DDC3E7FF2C982 /* UnlockGestureRecognizer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A8DE9C3F89BA2ECF7FF64A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D5F636A97AD5F6546FA222D /* BabyLockShareExtension */;
+			targetProxy = 421A302473A1BC4795F1AD71 /* PBXContainerItemProxy */;
+		};
+		92CD5E123629B30547076B2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76400EE5D8B45624928E8273 /* BabyLock */;
+			targetProxy = 5CF1B48031C2AF6222A9CFCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1FFD4B2DB6FE2A95DAEF8913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BabyLockShareExtension/BabyLockShareExtension.entitlements;
+				INFOPLIST_FILE = BabyLockShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ptw1255.BabyLock.ShareExtension;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20EF12ADDDFABB13DDD6E8A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2483B2E2F7F2B1F157ED61F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		469A02BBF8D0048B4A8B5DAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BabyLockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ptw1255.BabyLockTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BabyLock.app/BabyLock";
+			};
+			name = Debug;
+		};
+		6E5B16F389515FC71D59525E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BabyLock/App/BabyLock.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = BabyLock/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ptw1255.BabyLock;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BCCDC4CB934998D4947F8AF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BabyLock/App/BabyLock.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = BabyLock/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ptw1255.BabyLock;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF72F84699940249B2FB2E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BabyLockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ptw1255.BabyLockTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BabyLock.app/BabyLock";
+			};
+			name = Release;
+		};
+		D3F7B88B85EF822DF4F4DABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BabyLockShareExtension/BabyLockShareExtension.entitlements;
+				INFOPLIST_FILE = BabyLockShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ptw1255.BabyLock.ShareExtension;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28E5EA2371F53B5A2705405A /* Build configuration list for PBXNativeTarget "BabyLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCCDC4CB934998D4947F8AF9 /* Debug */,
+				6E5B16F389515FC71D59525E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		60A3DEE62472B2B355842901 /* Build configuration list for PBXNativeTarget "BabyLockShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FFD4B2DB6FE2A95DAEF8913 /* Debug */,
+				D3F7B88B85EF822DF4F4DABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A12F5C7D39742F7F2B48963C /* Build configuration list for PBXProject "BabyLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20EF12ADDDFABB13DDD6E8A6 /* Debug */,
+				2483B2E2F7F2B1F157ED61F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AD1F057A7CCE6CDF0DD73D5E /* Build configuration list for PBXNativeTarget "BabyLockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				469A02BBF8D0048B4A8B5DAF /* Debug */,
+				BF72F84699940249B2FB2E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F9613383C18363FA3C93BFE /* Project object */;
+}
