@@ -71,13 +71,18 @@ final class UnlockGestureRecognizer: UIGestureRecognizer {
         resetHold()
     }
 
+    private var displayLinkProxy: DisplayLinkProxy?
+
     private func startProgressReporting() {
         progressTimer?.invalidate()
-        progressTimer = CADisplayLink(target: self, selector: #selector(reportProgress))
+        let proxy = DisplayLinkProxy()
+        proxy.target = self
+        displayLinkProxy = proxy
+        progressTimer = CADisplayLink(target: proxy, selector: #selector(DisplayLinkProxy.tick))
         progressTimer?.add(to: .main, forMode: .common)
     }
 
-    @objc private func reportProgress() {
+    @objc fileprivate func reportProgress() {
         guard let startTime else { return }
         let elapsed = Date().timeIntervalSince(startTime)
         let progress = min(elapsed / Self.holdDuration, 1.0)
@@ -90,6 +95,12 @@ final class UnlockGestureRecognizer: UIGestureRecognizer {
         startTime = nil
         progressTimer?.invalidate()
         progressTimer = nil
+        displayLinkProxy = nil
         unlockDelegate?.unlockGestureProgressChanged(0)
     }
+}
+
+private class DisplayLinkProxy {
+    weak var target: UnlockGestureRecognizer?
+    @objc func tick() { target?.reportProgress() }
 }

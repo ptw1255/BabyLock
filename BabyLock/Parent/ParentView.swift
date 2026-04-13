@@ -31,6 +31,10 @@ struct ParentView: View {
                     BrowserView(webView: contentManager.webView) { newURL in
                         if let newURL {
                             urlText = newURL.absoluteString
+                            // Enable lock button when user navigates via in-page links
+                            if appState.contentSource == .none {
+                                appState.contentSource = .web(newURL)
+                            }
                         }
                     }
                 case .localVideo, .localPhoto:
@@ -102,7 +106,10 @@ struct ParentView: View {
     private func checkGuidedAccessTutorial() {
         if !appState.hasSeenGuidedAccessTutorial && !UIAccessibility.isGuidedAccessEnabled {
             appState.hasSeenGuidedAccessTutorial = true
-            appState.showGuidedAccessTutorial = true
+            // Delay to let child mode dismiss animation complete
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                appState.showGuidedAccessTutorial = true
+            }
         }
     }
 }

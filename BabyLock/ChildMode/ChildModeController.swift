@@ -28,6 +28,10 @@ final class ChildModeController: UIViewController, UnlockGestureDelegate {
 
     required init?(coder: NSCoder) { fatalError() }
 
+    deinit {
+        UIApplication.shared.isIdleTimerDisabled = false
+    }
+
     override var prefersStatusBarHidden: Bool { true }
     override var prefersHomeIndicatorAutoHidden: Bool { true }
     override var preferredScreenEdgesDeferringSystemGestures: UIRectEdge { .all }
@@ -42,8 +46,9 @@ final class ChildModeController: UIViewController, UnlockGestureDelegate {
         UIApplication.shared.isIdleTimerDisabled = true
     }
 
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        contentManager.webView.removeFromSuperview()
         UIApplication.shared.isIdleTimerDisabled = false
     }
 
@@ -129,8 +134,11 @@ final class ChildModeController: UIViewController, UnlockGestureDelegate {
             PasscodeEntryView(title: "Enter Passcode to Unlock") { [weak self] code in
                 guard let self else { return false }
                 if self.passcodeStore.verify(code) {
+                    // Dismiss passcode VC first, then dismiss ChildModeController
                     self.dismiss(animated: false) {
-                        self.onUnlock()
+                        self.presentingViewController?.dismiss(animated: false) {
+                            self.onUnlock()
+                        }
                     }
                     return true
                 }

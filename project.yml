@@ -29,9 +29,6 @@ targets:
         NSPhotoLibraryUsageDescription: "BabyLock needs access to your photos and videos to play them for your child."
     entitlements:
       path: BabyLock/App/BabyLock.entitlements
-      properties:
-        com.apple.security.application-groups:
-          - group.com.ptw1255.BabyLock
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.ptw1255.BabyLock
@@ -54,9 +51,6 @@ targets:
             NSExtensionActivationSupportsWebURLWithMaxCount: 1
     entitlements:
       path: BabyLockShareExtension/BabyLockShareExtension.entitlements
-      properties:
-        com.apple.security.application-groups:
-          - group.com.ptw1255.BabyLock
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.ptw1255.BabyLock.ShareExtension
