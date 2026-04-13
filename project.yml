@@ -1,0 +1,75 @@
+name: BabyLock
+options:
+  bundleIdPrefix: com.ptw1255
+  deploymentTarget:
+    iOS: "17.0"
+  generateEmptyDirectories: true
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    TARGETED_DEVICE_FAMILY: "1,2"
+targets:
+  BabyLock:
+    type: application
+    platform: iOS
+    sources:
+      - path: BabyLock
+    info:
+      path: BabyLock/App/Info.plist
+      properties:
+        CFBundleDisplayName: BabyLock
+        CFBundleURLTypes:
+          - CFBundleURLSchemes:
+              - babylock
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        NSPhotoLibraryUsageDescription: "BabyLock needs access to your photos and videos to play them for your child."
+    entitlements:
+      path: BabyLock/App/BabyLock.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.ptw1255.BabyLock
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ptw1255.BabyLock
+    dependencies:
+      - target: BabyLockShareExtension
+        embed: true
+  BabyLockShareExtension:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: BabyLockShareExtension
+    info:
+      path: BabyLockShareExtension/Info.plist
+      properties:
+        CFBundleDisplayName: BabyLock
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.share-services
+          NSExtensionPrincipalClass: "$(PRODUCT_MODULE_NAME).ShareViewController"
+          NSExtensionActivationRule:
+            NSExtensionActivationSupportsWebURLWithMaxCount: 1
+    entitlements:
+      path: BabyLockShareExtension/BabyLockShareExtension.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.ptw1255.BabyLock
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ptw1255.BabyLock.ShareExtension
+  BabyLockTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: BabyLockTests
+    info:
+      path: BabyLockTests/Info.plist
+      properties: {}
+    dependencies:
+      - target: BabyLock
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ptw1255.BabyLockTests
