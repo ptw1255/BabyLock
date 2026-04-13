@@ -18,6 +18,12 @@ struct BabyLockApp: App {
                 .onAppear {
                     checkPendingSharedURL()
                 }
+                .sheet(isPresented: Binding(
+                    get: { appState.showGuidedAccessTutorial },
+                    set: { appState.showGuidedAccessTutorial = $0 }
+                )) {
+                    GuidedAccessTutorialView()
+                }
         }
     }
 
