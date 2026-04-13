@@ -30,7 +30,8 @@ struct BabyLockApp: App {
     private func checkPendingSharedURL() {
         let defaults = UserDefaults(suiteName: "group.com.ptw1255.BabyLock")
         guard let urlString = defaults?.string(forKey: "pendingURL"),
-              let url = URL(string: urlString) else { return }
+              let url = URL(string: urlString),
+              url.scheme == "https" || url.scheme == "http" else { return }
         defaults?.removeObject(forKey: "pendingURL")
         contentManager.loadURL(url)
         appState.contentSource = .web(url)

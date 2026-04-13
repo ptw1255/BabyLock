@@ -29,8 +29,8 @@ struct BrowserToolbar: View {
 
                 TextField("Search or enter URL", text: $urlText)
                     .textFieldStyle(.roundedBorder)
-                    .autocapitalization(.none)
-                    .disableAutocorrection(true)
+                    .textInputAutocapitalization(.never)
+                    .autocorrectionDisabled()
                     .keyboardType(.URL)
                     .submitLabel(.go)
                     .onSubmit(onGo)
